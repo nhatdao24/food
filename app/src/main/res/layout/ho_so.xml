@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ho_so">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:padding="20dp"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                app:srcCompat="@drawable/ic_quay_lai" />
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Thông tin cá nhân"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:layout_marginLeft="10dp"
+                tools:layout_editor_absoluteX="84dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/circle_border"
+
+            >
+
+            <ImageView
+                android:id="@+id/imgAnhHS"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/circle_border"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_launcher_foreground"
+                tools:layout_editor_absoluteX="141dp"
+                tools:layout_editor_absoluteY="122dp"
+                tools:srcCompat="@tools:sample/avatars" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+        <!--            Ten-->
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Họ tên:"
+                tools:layout_editor_absoluteX="18dp"
+                tools:layout_editor_absoluteY="211dp" />
+
+            <TextView
+                android:id="@+id/tvTen"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:textColor="@color/black"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:background="@color/black"
+                android:layout_marginBottom="7dp"/>
+<!--So dien thoai-->
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Số điện thoại:"
+                tools:layout_editor_absoluteX="21dp"
+                tools:layout_editor_absoluteY="275dp" />
+
+            <TextView
+                android:id="@+id/tvSDT"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:textColor="@color/black"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:background="@color/black"
+                android:layout_marginBottom="7dp"/>
+<!--Email-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email:"
+                tools:layout_editor_absoluteX="22dp"
+                tools:layout_editor_absoluteY="313dp" />
+
+            <TextView
+                android:id="@+id/tvEmail"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:textColor="@color/black"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:background="@color/black"
+                android:layout_marginBottom="7dp"/>
+<!--Dia chi-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Địa chỉ:"
+                tools:layout_editor_absoluteX="21dp"
+                tools:layout_editor_absoluteY="404dp" />
+
+            <TextView
+                android:id="@+id/tvDC"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:textColor="@color/black"
+                android:inputType="textMultiLine"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:background="@color/black"
+                android:layout_marginBottom="7dp"
+               />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnSuaTT"
+            android:layout_marginTop="150dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="Sửa thông tin" />
+
+        <Button
+            android:id="@+id/btnDX"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:backgroundTint="#F49638"
+            android:textSize="20dp"
+            android:text="Đăng xuất" />
+
+
+
+
+    </LinearLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
