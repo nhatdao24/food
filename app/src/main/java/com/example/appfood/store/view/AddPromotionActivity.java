@@ -31,7 +31,7 @@ public class AddPromotionActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_add_promotion);
+        setContentView(R.layout.store_activity_add_promotion);
 
         promotionController = PromotionController.getInstance();
 

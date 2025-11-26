@@ -38,7 +38,7 @@ public class EditDishActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_edit_dish);
+        setContentView(R.layout.store_activity_edit_dish);
 
         dishController = DishController.getInstance();
         dishId = getIntent().getStringExtra("dishId");

@@ -18,7 +18,7 @@ public class SalesReportActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_sales_report);
+        setContentView(R.layout.store_activity_sales_report);
 
         initViews();
         setupListeners();

@@ -15,6 +15,6 @@ public class ConfirmedOrdersActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_confirmed_orders);
+        setContentView(R.layout.store_activity_confirmed_orders);
     }
 }

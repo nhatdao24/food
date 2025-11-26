@@ -12,9 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Giaodien">
 
-        <!-- NEW MVC STRUCTURE - All activities in view package -->
+        <!-- NEW MVC STRUCTURE - All activities in store.view package -->
         <activity
-            android:name=".view.MainActivity"
+            android:name=".store.view.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -22,29 +22,35 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".view.RegisterStep1Activity" android:exported="false" />
-        <activity android:name=".view.RegisterStep2Activity" android:exported="false" />
-        <activity android:name=".view.HomeActivity" android:exported="false" />
+        <activity android:name=".store.view.RegisterStep1Activity" android:exported="false" />
+        <activity android:name=".store.view.RegisterStep2Activity" android:exported="false" />
+        <activity android:name=".store.view.HomeActivity" android:exported="false" />
+
+        <!-- Profile -->
+        <activity android:name=".store.view.ProfileActivity" android:exported="false" />
+
+        <!-- Notification -->
+        <activity android:name=".store.view.NotificationActivity" android:exported="false" />
 
         <!-- Dish Management -->
-        <activity android:name=".view.DishListActivity" android:exported="false" />
-        <activity android:name=".view.AddDishActivity" android:exported="false" />
-        <activity android:name=".view.EditDishActivity" android:exported="false" />
+        <activity android:name=".store.view.DishListActivity" android:exported="false" />
+        <activity android:name=".store.view.AddDishActivity" android:exported="false" />
+        <activity android:name=".store.view.EditDishActivity" android:exported="false" />
 
         <!-- Order Management -->
-        <activity android:name=".view.NewOrdersActivity" android:exported="false" />
-        <activity android:name=".view.ConfirmedOrdersActivity" android:exported="false" />
-        <activity android:name=".view.OrdersManagerActivity" android:exported="false" />
+        <activity android:name=".store.view.NewOrdersActivity" android:exported="false" />
+        <activity android:name=".store.view.ConfirmedOrdersActivity" android:exported="false" />
+        <activity android:name=".store.view.OrdersManagerActivity" android:exported="false" />
 
         <!-- Promotion Management -->
-        <activity android:name=".view.PromotionListActivity" android:exported="false" />
-        <activity android:name=".view.AddPromotionActivity" android:exported="false" />
-        <activity android:name=".view.EditPromotionActivity" android:exported="false" />
+        <activity android:name=".store.view.PromotionListActivity" android:exported="false" />
+        <activity android:name=".store.view.AddPromotionActivity" android:exported="false" />
+        <activity android:name=".store.view.EditPromotionActivity" android:exported="false" />
 
         <!-- Reports & Reviews -->
-        <activity android:name=".view.SalesReportActivity" android:exported="false" />
-        <activity android:name=".view.ReviewListActivity" android:exported="false" />
-        <activity android:name=".view.ReviewDetailActivity" android:exported="false" />
+        <activity android:name=".store.view.SalesReportActivity" android:exported="false" />
+        <activity android:name=".store.view.ReviewListActivity" android:exported="false" />
+        <activity android:name=".store.view.ReviewDetailActivity" android:exported="false" />
 
     </application>
 

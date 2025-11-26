@@ -33,7 +33,7 @@ public class DishAdapter extends RecyclerView.Adapter<DishAdapter.DishViewHolder
     @NonNull
     @Override
     public DishViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(context).inflate(R.layout.dish_item, parent, false);
+        View view = LayoutInflater.from(context).inflate(R.layout.store_dish_item, parent, false);
         return new DishViewHolder(view);
     }
 

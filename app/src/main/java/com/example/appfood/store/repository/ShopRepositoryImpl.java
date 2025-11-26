@@ -65,6 +65,7 @@ public class ShopRepositoryImpl implements ShopRepository {
 
     @Override
     public void getShopById(String shopId, OnDataLoadedCallback<Shop> callback) {
+
         databaseReference.child(shopId).addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
@@ -73,7 +74,7 @@ public class ShopRepositoryImpl implements ShopRepository {
                     shop.setStoreId(snapshot.getKey());
                     callback.onSuccess(shop);
                 } else {
-                    callback.onFailure("Shop not found");
+                    callback.onFailure("Không tìm thấy thông tin cửa hàng");
                 }
             }
 

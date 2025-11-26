@@ -33,7 +33,7 @@ public class PromotionAdapter extends RecyclerView.Adapter<PromotionAdapter.Prom
     @NonNull
     @Override
     public PromotionViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(context).inflate(R.layout.promotion_item, parent, false);
+        View view = LayoutInflater.from(context).inflate(R.layout.store_promotion_item, parent, false);
         return new PromotionViewHolder(view);
     }
 

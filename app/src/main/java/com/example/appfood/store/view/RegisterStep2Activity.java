@@ -43,7 +43,7 @@ public class RegisterStep2Activity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_register_step2);
+        setContentView(R.layout.store_activity_register_step2);
 
         shopController = ShopController.getInstance();
 

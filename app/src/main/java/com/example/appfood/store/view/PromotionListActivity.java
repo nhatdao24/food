@@ -38,7 +38,7 @@ public class PromotionListActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_promotion_list);
+        setContentView(R.layout.store_activity_promotion_list);
 
         promotionController = PromotionController.getInstance();
 

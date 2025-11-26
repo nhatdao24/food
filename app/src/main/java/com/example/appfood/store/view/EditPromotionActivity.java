@@ -32,7 +32,7 @@ public class EditPromotionActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_edit_promotion);
+        setContentView(R.layout.store_activity_edit_promotion);
 
         promotionController = PromotionController.getInstance();
         promotionId = getIntent().getStringExtra("promotionId");

@@ -15,6 +15,6 @@ public class NewOrdersActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_new_orders);
+        setContentView(R.layout.store_activity_new_orders);
     }
 }

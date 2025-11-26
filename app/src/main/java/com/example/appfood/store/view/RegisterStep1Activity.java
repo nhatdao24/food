@@ -29,7 +29,7 @@ public class RegisterStep1Activity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_register_step1);
+        setContentView(R.layout.store_activity_register_step1);
 
         initViews();
         setupBusinessTypeSpinner();

@@ -23,7 +23,7 @@ public class OrdersManagerActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_orders_manager);
+        setContentView(R.layout.store_activity_orders_manager);
 
         initViews();
         setupViewPager();

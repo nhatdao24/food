@@ -40,7 +40,7 @@ public class DishListActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_dish_list);
+        setContentView(R.layout.store_activity_dish_list);
 
         dishController = DishController.getInstance();
 
