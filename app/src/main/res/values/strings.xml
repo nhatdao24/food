@@ -1,0 +1,67 @@
+<resources>
+    <string name="app_name">Food App</string>
+
+    <!-- Common -->
+    <string name="food_app">Food App</string>
+
+    <!-- Register Screen 1 -->
+    <string name="register_title_1">Đăng ký cửa hàng</string>
+    <string name="register_subtitle">Điền đầy đủ thông tin để đăng ký cửa hàng</string>
+    <string name="store_name">Tên cửa hàng:</string>
+    <string name="business_type">Loại hình kinh doanh:</string>
+    <string name="specific_address">Địa chỉ cụ thể:</string>
+    <string name="representative_name">Họ tên người đại diện:</string>
+    <string name="phone_number">Số điện thoại:</string>
+    <string name="email">Email:</string>
+    <string name="continue_btn">Tiếp tục</string>
+
+    <!-- Register Screen 2 -->
+    <string name="register_title_2">Đăng ký cửa hàng</string>
+    <string name="id_number">Số CMND/CCCD:</string>
+    <string name="issue_date">Ngày cấp:</string>
+    <string name="issue_place">Nơi cấp:</string>
+    <string name="bank_name">Tên ngân hàng:</string>
+    <string name="bank_account">Số tk ngân hàng:</string>
+    <string name="account_holder">Tên chủ tk ngân hàng:</string>
+    <string name="bank_branch">Chi nhánh ngân hàng:</string>
+    <string name="complete_btn">Hoàn tất</string>
+
+    <!-- Hints -->
+    <string name="hint_select">Chọn</string>
+
+    <!-- Home Screen -->
+    <string name="welcome_message">Chào mừng %s</string>
+    <string name="menu_manage_menu">Quản lý thực đơn</string>
+    <string name="menu_manage_orders">Quản lý đơn hàng</string>
+    <string name="menu_manage_promotions">Quản lý khuyến mãi</string>
+    <string name="menu_manage_revenue">Quản lý doanh thu</string>
+    <string name="menu_customer_support">Hỗ trợ khách hàng</string>
+
+    <!-- Bottom Navigation -->
+    <string name="nav_home">Trang chủ</string>
+    <string name="nav_notifications">Thông báo</string>
+    <string name="nav_profile">Tài khoản</string>
+
+    <!-- Menu Management -->
+    <string name="menu_management">Món ăn</string>
+    <string name="add_dish">Thêm món ăn</string>
+    <string name="edit_dish">Sửa món ăn</string>
+    <string name="dish_name">Tên món ăn:</string>
+    <string name="quantity">Số lượng:</string>
+    <string name="price">Giá:</string>
+    <string name="dish_type">Tên quán ăn:</string>
+    <string name="restaurant">Địa chỉ quán:</string>
+    <string name="description">Mô tả:</string>
+    <string name="complete">Hoàn tất</string>
+    <string name="choose_image">Chọn hình ảnh</string>
+
+    <!-- Order Management -->
+    <string name="new_orders">Đơn hàng mới</string>
+    <string name="confirmed_orders">Đơn hàng đã xác nhận</string>
+    <string name="cancel_order">Hủy đơn</string>
+    <string name="confirm_order">Xác nhận</string>
+    <string name="preparing_order">Đang làm</string>
+    <string name="order_item">Đơn hàng:</string>
+    <string name="total_amount">Tổng tiền:</string>
+    <string name="delivery_time">Thời gian giao hàng:</string>
+</resources>

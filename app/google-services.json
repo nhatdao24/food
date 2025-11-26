@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "995358774400",
+    "project_id": "appfood-9970b",
+    "storage_bucket": "appfood-9970b.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:995358774400:android:2e229093dfd53346ad8265",
+        "android_client_info": {
+          "package_name": "com.example.giaodien"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCYljDudzUH3lFoyF3wwzTg-2AZtHbJiRc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
