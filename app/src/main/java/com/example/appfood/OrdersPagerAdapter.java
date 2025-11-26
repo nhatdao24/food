@@ -1,4 +1,4 @@
-package com.example.giaodien;
+package com.example.appfood;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;

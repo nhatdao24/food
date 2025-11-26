@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.giaodien"
+    namespace = "com.example.appfood"
     compileSdk = 36
 
     defaultConfig {
-        applicationId = "com.example.giaodien"
+        applicationId = "com.example.appfood"
         minSdk = 24
         targetSdk = 36
         versionCode = 1

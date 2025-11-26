@@ -1,4 +1,4 @@
-package com.example.giaodien;
+package com.example.appfood;
 
 import android.content.Context;
 import android.content.Intent;

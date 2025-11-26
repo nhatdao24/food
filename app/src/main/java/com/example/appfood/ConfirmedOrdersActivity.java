@@ -1,4 +1,4 @@
-package com.example.giaodien;
+package com.example.appfood;
 
 import android.os.Bundle;
 import android.view.View;

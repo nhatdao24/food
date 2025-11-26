@@ -1,4 +1,4 @@
-package com.example.giaodien;
+package com.example.appfood;
 
 public class Promotion {
     private String promotionId = "";
