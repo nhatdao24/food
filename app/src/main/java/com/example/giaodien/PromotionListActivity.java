@@ -6,6 +6,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -85,10 +86,35 @@ public class PromotionListActivity extends AppCompatActivity {
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 promotionList.clear();
                 for (DataSnapshot dataSnapshot : snapshot.getChildren()) {
-                    Promotion promotion = dataSnapshot.getValue(Promotion.class);
-                    if (promotion != null) {
+                    try {
+                        Promotion promotion = new Promotion();
                         promotion.setPromotionId(dataSnapshot.getKey());
+
+                        // Safely get voucherName (new) or promotionName (old)
+                        if (dataSnapshot.child("voucherName").exists()) {
+                            promotion.setVoucherName(dataSnapshot.child("voucherName").getValue(String.class));
+                        } else if (dataSnapshot.child("promotionName").exists()) {
+                            promotion.setVoucherName(dataSnapshot.child("promotionName").getValue(String.class)); // Fallback to old field
+                        }
+
+                        // Safely get discountValue
+                        if (dataSnapshot.child("discountValue").exists()) {
+                            promotion.setDiscountValue(String.valueOf(dataSnapshot.child("discountValue").getValue()));
+                        }
+
+                        // Safely get status
+                        if (dataSnapshot.child("status").exists()) {
+                            Object statusObj = dataSnapshot.child("status").getValue();
+                            if (statusObj instanceof Long) {
+                                promotion.setStatus(((Long) statusObj).intValue());
+                            } else if (statusObj instanceof String) {
+                                promotion.setStatus(Integer.parseInt((String) statusObj));
+                            }
+                        }
+
                         promotionList.add(promotion);
+                    } catch (Exception e) {
+                        // Ignore corrupted/malformed records
                     }
                 }
                 promotionAdapter.notifyDataSetChanged();
@@ -96,7 +122,7 @@ public class PromotionListActivity extends AppCompatActivity {
 
             @Override
             public void onCancelled(@NonNull DatabaseError error) {
-                // Handle error
+                Toast.makeText(PromotionListActivity.this, "Không thể tải danh sách khuyến mãi.", Toast.LENGTH_SHORT).show();
             }
         });
     }

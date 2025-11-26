@@ -54,6 +54,9 @@
             android:name=".AddPromotionActivity"
             android:exported="false" />
         <activity
+            android:name=".EditPromotionActivity"
+            android:exported="false" />
+        <activity
             android:name=".SalesReportActivity"
             android:exported="false" />
         <activity

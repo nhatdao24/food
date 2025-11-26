@@ -78,7 +78,18 @@ public class AddPromotionActivity extends AppCompatActivity {
         String discountValue = etDiscountValue.getText().toString().trim();
         String condition = etCondition.getText().toString().trim();
         String endDate = etEndDate.getText().toString().trim();
-        long quantity = Long.parseLong(etQuantity.getText().toString().trim());
+        
+        long quantity = 0;
+        String quantityStr = etQuantity.getText().toString().trim();
+        if (!quantityStr.isEmpty()) {
+            try {
+                quantity = Long.parseLong(quantityStr);
+            } catch (NumberFormatException e) {
+                etQuantity.setError("Vui lòng nhập số hợp lệ");
+                return;
+            }
+        }
+
         int status = spinnerStatus.getSelectedItemPosition(); // 0 for Active, 1 for Inactive
 
         HashMap<String, Object> promotionInfo = new HashMap<>();

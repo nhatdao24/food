@@ -1,25 +1,17 @@
 package com.example.giaodien;
 
 public class Promotion {
-    private String promotionId;
-    private String voucherName;
-    private String discountValue;
-    private String condition;
-    private String endDate;
-    private long quantity;
-    private int status; // 0: Inactive, 1: Active
+    private String promotionId = "";
+    private String voucherName = "";
+    private String discountValue = "";
+    private String condition = "";
+    private String endDate = "";
+    private long quantity = 0;
+    private int status = 0; // 0: Active, 1: Inactive
 
     public Promotion() {
-        // Default constructor
-    }
-
-    public Promotion(String voucherName, String discountValue, String condition, String endDate, long quantity, int status) {
-        this.voucherName = voucherName;
-        this.discountValue = discountValue;
-        this.condition = condition;
-        this.endDate = endDate;
-        this.quantity = quantity;
-        this.status = status;
+        // Default constructor required for Firebase. 
+        // All fields are initialized to safe, non-null values.
     }
 
     // Getters and Setters
